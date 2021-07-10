@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-storeappmain-dev-131706-authRole",
+      "UnauthRoleArn": "arn:aws:iam::884260782820:role/amplify-storeappmain-dev-131706-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::884260782820:role/amplify-storeappmain-dev-131706-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-storeappmain-dev-131706-deployment",
+      "UnauthRoleName": "amplify-storeappmain-dev-131706-unauthRole",
+      "StackName": "amplify-storeappmain-dev-131706",
+      "StackId": "arn:aws:cloudformation:us-west-2:884260782820:stack/amplify-storeappmain-dev-131706/feee5660-cfa8-11eb-af48-0abbb19c9b19",
+      "AmplifyAppId": "d3gunbpk715x3r"
+    },
+    "categories": {
+      "auth": {
+        "storeappmainb9061007": {}
+      }
+    }
+  }
+}

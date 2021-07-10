@@ -1,0 +1,98 @@
+export default [
+  {
+    id: 1,
+    title: 'Health',
+    image:
+      'https://images.unsplash.com/photo-1609725236589-d987ffc8133a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
+    avgRating: 3.5,
+    ratings: 2382,
+    price: '$7.75',
+    oldPrice: '5.71',
+  },
+
+  {
+    id: 2,
+    title: 'Games',
+    image:
+      'https://images.unsplash.com/photo-1606167668584-78701c57f13d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
+    avgRating: 2.2,
+    ratings: 8607,
+    price: '$2.16',
+    oldPrice: '9.05',
+  },
+  {
+    id: 3,
+    title: 'Tools',
+    image:
+      'https://images.unsplash.com/photo-1581783898377-1c85bf937427?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=716&q=80',
+    avgRating: 3.9,
+    ratings: 3103,
+    price: '$8.97',
+    oldPrice: '2.95',
+  },
+  {
+    id: 4,
+    title: 'Automotive',
+    image:
+      'https://images.unsplash.com/photo-1592853625601-bb9d23da12fc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
+    avgRating: 2.8,
+    ratings: 3007,
+    price: '$7.01',
+    oldPrice: '7.98',
+  },
+  {
+    id: 5,
+    title: 'Grocery',
+    image:
+      'https://images.unsplash.com/photo-1543168256-418811576931?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+    avgRating: 2.6,
+    ratings: 4574,
+    price: '$5.45',
+    oldPrice: '4.04',
+  },
+  {
+    id: 6,
+    title: 'Shoes',
+    image: 'http://dummyimage.com/245x100.png/dddddd/000000',
+    avgRating: 1.7,
+    ratings: 2791,
+    price: '$5.63',
+    oldPrice: '1.32',
+  },
+  {
+    id: 7,
+    title: 'Tools',
+    image: 'http://dummyimage.com/117x100.png/5fa2dd/ffffff',
+    avgRating: 4.9,
+    ratings: 2151,
+    price: '$9.93',
+    oldPrice: '8.25',
+  },
+  {
+    id: 8,
+    title: 'Music',
+    image: 'http://dummyimage.com/229x100.png/dddddd/000000',
+    avgRating: 3.4,
+    ratings: 9410,
+    price: '$7.54',
+    oldPrice: '7.06',
+  },
+  {
+    id: 9,
+    title: 'Automotive',
+    image: 'http://dummyimage.com/109x100.png/ff4444/ffffff',
+    avgRating: 4.5,
+    ratings: 9358,
+    price: '$6.04',
+    oldPrice: '9.27',
+  },
+  {
+    id: 10,
+    title: 'Music',
+    image: 'http://dummyimage.com/222x100.png/ff4444/ffffff',
+    avgRating: 1.2,
+    ratings: 2431,
+    price: '$6.51',
+    oldPrice: '5.77',
+  },
+];
