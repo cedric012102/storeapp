@@ -10,11 +10,11 @@ import {
 } from 'react-native';
 import {Picker} from '@react-native-picker/picker';
 import countryList from 'country-list';
-import { DataStore } from 'aws-amplify';
-import {Order, OrderProduct, CartProduct} from '../models'; //coming from schema
+// import { DataStore } from 'aws-amplify';
+// import {Order, OrderProduct, CartProduct} from '../models'; //coming from schema
 import Button from '../components/button';
 import styles from './styles/address-screen-style';
-import { Auth } from 'aws-amplify';
+import Auth from '@react-native-firebase/auth';
 import {useNavigation} from '@react-navigation/native';
 
 const countries = countryList.getData();

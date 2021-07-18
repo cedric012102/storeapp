@@ -13,15 +13,24 @@ interface ProductItemProps {
     ratings: number;
     price: number;
     oldPrice?: number;
+    description: string;
+    images: string;
   };
 }
 
-const ProductItem = ({item}: ProductItemProps) => {
+const ProductItem = ({ item }: ProductItemProps) => {
   const navigation = useNavigation();
 
   const onPress = () => {
-    console.warn('item pressed');
-    navigation.navigate('ProductDetails', {id: item.id});
+    // console.warn('item pressed');
+    navigation.navigate('ProductDetails', {
+      id: item.id,
+      title: item.title,
+      image: item.image,
+      price: item.price,
+      oldPrice: item.oldPrice,
+      description: item.description,
+    });
   };
   return (
     <Pressable onPress={onPress} style={styles.root}>
@@ -43,9 +52,9 @@ const ProductItem = ({item}: ProductItemProps) => {
           <Text>{item.ratings}</Text>
         </View>
         <Text style={styles.price}>
-          from {item.price.toFixed(2)}
+          from ${item.price}.00
           {item.oldPrice && (
-            <Text style={styles.oldPrice}>${item.oldPrice.toFixed(2)}</Text>
+            <Text style={styles.oldPrice}>${item.oldPrice}.00</Text>
           )}
         </Text>
       </View>

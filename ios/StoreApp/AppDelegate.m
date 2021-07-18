@@ -3,26 +3,27 @@
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+#import <Firebase.h>
+#import <RNGoogleSignin/RNGoogleSignin.h>
 
 #if RCT_DEV
-
 #import <React/RCTDevLoadingView.h>
-
-
 #endif
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-#ifdef FB_SONARKIT_ENABLED
-  
-#endif
+  if ([FIRApp defaultApp] == nil) {
+      [FIRApp configure];
+    }
 
-  RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
+  RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self
+                        launchOptions:launchOptions];
 #if RCT_DEV
   [bridge moduleForClass:[RCTDevLoadingView class]];
 #endif
+
   RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
                                                    moduleName:@"StoreApp"
                                             initialProperties:nil];
@@ -40,6 +41,11 @@
   [self.window makeKeyAndVisible];
   return YES;
 }
+
+- (BOOL)application:(UIApplication *)application openURL:(nonnull NSURL *)url options:(nonnull NSDictionary<NSString *,id> *)options {
+  return [RNGoogleSignin application:application openURL:url options:options];
+}
+
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
 {

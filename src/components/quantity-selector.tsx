@@ -11,7 +11,7 @@ const QuantitySelector = ({quantity, setQuantity}) => {
   //stop value at 0
 
   const onPlus = () => {
-    setQuantity(quantity + 1);
+    setQuantity(Math.max(2, quantity + 0));
   };
 
   return (

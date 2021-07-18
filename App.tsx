@@ -15,7 +15,6 @@ import {View, StatusBar, useColorScheme} from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import Router from './src/router/router';
 
-import {withAuthenticator} from 'aws-amplify-react-native';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -33,13 +32,6 @@ const App = () => {
   );
 };
 
-export default withAuthenticator(App);
+export default App;
 
-//amplify init
-//amplify push to update changes
-//amplify checkout when deploying
-//amplify push
-// wrap withAuthenticator around export default app
-//amplify add auth
-//amplify add api
-//amplify console or amplify console api
+

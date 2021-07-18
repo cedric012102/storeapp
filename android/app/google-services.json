@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1019409082418",
+    "project_id": "storeapp-bab26",
+    "storage_bucket": "storeapp-bab26.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019409082418:android:03e189ff568baaa344342b",
+        "android_client_info": {
+          "package_name": "com.storeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019409082418-ihv6agkc5fdqltgupahbdqd7ltosvpll.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjl4OhtWlriwB3ubR_HVXvvcpzLfqb98A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1019409082418-ihv6agkc5fdqltgupahbdqd7ltosvpll.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1019409082418-q4h84joaqrm1t1tc1huqaqk0odsq9a9k.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.StoreApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

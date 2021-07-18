@@ -2,8 +2,9 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-import HomeScreen from '../screens/home-screen';
+import Login from '../screens/login';
 import BottomTabNav from './bottom-tab-nav';
+import SignUp from '../screens/signup';
 
 const Root = createStackNavigator();
 
@@ -11,10 +12,14 @@ const Root = createStackNavigator();
 const Router = () => {
   return (
     <NavigationContainer>
-      <Root.Navigator screenOptions={{headerShown: false}}>
-        <Root.Screen component={BottomTabNav} name="HomeTabs" />
-      </Root.Navigator>
-    </NavigationContainer>
+    <Root.Navigator initialRouteName={'Login'} screenOptions={{headerShown: false}}>
+      <Root.Screen component={Login} name="Login" />
+      <Root.Screen component={BottomTabNav} name="HomeTabs" />
+      <Root.Screen component={SignUp} name="SignUp" options={{
+                headerShown: true,
+              }}/>
+    </Root.Navigator>
+  </NavigationContainer>
   );
 };
 

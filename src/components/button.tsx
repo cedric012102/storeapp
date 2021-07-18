@@ -2,6 +2,7 @@
 import React from 'react';
 import {Text, Pressable} from 'react-native';
 import styles from './styles/button-style';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 
 interface ButtonProps {
   text: 'string';
@@ -9,10 +10,15 @@ interface ButtonProps {
 }
 
 // create a component
-const Button = ({text, onPress}: ButtonProps) => {
+const Button = ({text, iconName, iconColor, onPress}: ButtonProps) => {
   return (
     <Pressable onPress={onPress} style={styles.root}>
       <Text style={styles.text}>{text}</Text>
+      <AntDesign
+            name={iconName}
+            size={20}
+            color={iconColor}
+          />
     </Pressable>
   );
 };
