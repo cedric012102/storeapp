@@ -18,11 +18,10 @@ interface ProductItemProps {
   };
 }
 
-const ProductItem = ({ item }: ProductItemProps) => {
+const ProductItem = ({item}: ProductItemProps) => {
   const navigation = useNavigation();
 
   const onPress = () => {
-    // console.warn('item pressed');
     navigation.navigate('ProductDetails', {
       id: item.id,
       title: item.title,

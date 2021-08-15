@@ -14,11 +14,7 @@ const Button = ({text, iconName, iconColor, onPress}: ButtonProps) => {
   return (
     <Pressable onPress={onPress} style={styles.root}>
       <Text style={styles.text}>{text}</Text>
-      <AntDesign
-            name={iconName}
-            size={20}
-            color={iconColor}
-          />
+      <AntDesign name={iconName} size={20} color={iconColor} />
     </Pressable>
   );
 };

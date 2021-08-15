@@ -30,6 +30,14 @@
 				<string>com.googleusercontent.apps.1019409082418-q4h84joaqrm1t1tc1huqaqk0odsq9a9k</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>org.reactjs.native.example.StoreApp.payments</string>
+			</array>
+		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>

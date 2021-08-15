@@ -1,30 +1,29 @@
-import firebase from "firebase";
+import firebase from 'firebase';
 
 export function login(email, password, loginComplete) {
-
-    firebase.auth()
+  firebase
+    .auth()
     .signInWithEmailAndPassword(email, password)
     .then(() => loginComplete())
-    .catch((error) => console.log('error : ', error))
+    .catch(error => console.log('error : ', error));
 
-    console.log('Email', email)
-    console.log('Password', password)
+  console.log('Email', email);
+  console.log('Password', password);
 }
 
 export function signUp(email, password, signUpComplete) {
-
-    firebase.auth()
+  firebase
+    .auth()
     .createUserWithEmailAndPassword(email, password)
     .then(() => login(email, password, signUpComplete))
-    .catch((error) => console.log('error : ', error))
+    .catch(error => console.log('error : ', error));
 
-    console.log('Signup Email', email)
-    console.log('Signup Password', password)
+  console.log('Signup Email', email);
+  console.log('Signup Password', password);
 }
 
 export function subscribeToAuth(authStateChanged) {
-    firebase.auth()
-    .onAuthStateChanged((user) => {
-        authStateChanged(user)
-    })
+  firebase.auth().onAuthStateChanged(user => {
+    authStateChanged(user);
+  });
 }

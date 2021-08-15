@@ -224,6 +224,30 @@ PODS:
   - BoringSSL-GRPC/Implementation (0.0.7):
     - BoringSSL-GRPC/Interface (= 0.0.7)
   - BoringSSL-GRPC/Interface (0.0.7)
+  - Braintree (4.37.1):
+    - Braintree/Card (= 4.37.1)
+    - Braintree/Core (= 4.37.1)
+    - Braintree/PayPal (= 4.37.1)
+    - Braintree/UI (= 4.37.1)
+  - Braintree/Card (4.37.1):
+    - Braintree/Core
+  - Braintree/Core (4.37.1)
+  - Braintree/DataCollector (4.37.1):
+    - Braintree/Core
+  - Braintree/PayPal (4.37.1):
+    - Braintree/Core
+    - Braintree/PayPalOneTouch
+  - Braintree/PayPalDataCollector (4.37.1):
+    - Braintree/Core
+    - Braintree/PayPalUtils
+  - Braintree/PayPalOneTouch (4.37.1):
+    - Braintree/Core
+    - Braintree/PayPalDataCollector
+    - Braintree/PayPalUtils
+  - Braintree/PayPalUtils (4.37.1)
+  - Braintree/UI (4.37.1):
+    - Braintree/Card
+    - Braintree/Core
   - DoubleConversion (1.1.6)
   - FBLazyVector (0.64.2)
   - FBReactNativeSpec (0.64.2):
@@ -621,6 +645,9 @@ PODS:
   - RNGoogleSignin (6.0.1):
     - GoogleSignIn (~> 5.0.0)
     - React-Core
+  - RNPaypal (4.1.0):
+    - Braintree
+    - React
   - RNReanimated (2.2.0):
     - DoubleConversion
     - FBLazyVector
@@ -658,6 +685,8 @@ PODS:
   - Yoga (1.14.0)
 
 DEPENDENCIES:
+  - Braintree (~> 4)
+  - Braintree/DataCollector
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - FBReactNativeSpec (from `../node_modules/react-native/React/FBReactNativeSpec`)
@@ -699,6 +728,7 @@ DEPENDENCIES:
   - "RNFBStorage (from `../node_modules/@react-native-firebase/storage`)"
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - "RNGoogleSignin (from `../node_modules/@react-native-google-signin/google-signin`)"
+  - RNPaypal (from `../node_modules/react-native-paypal`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
@@ -710,6 +740,7 @@ SPEC REPOS:
     - AppAuth
     - boost-for-react-native
     - BoringSSL-GRPC
+    - Braintree
     - Firebase
     - FirebaseAuth
     - FirebaseCore
@@ -806,6 +837,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-gesture-handler"
   RNGoogleSignin:
     :path: "../node_modules/@react-native-google-signin/google-signin"
+  RNPaypal:
+    :path: "../node_modules/react-native-paypal"
   RNReanimated:
     :path: "../node_modules/react-native-reanimated"
   RNScreens:
@@ -820,6 +853,7 @@ SPEC CHECKSUMS:
   AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   BoringSSL-GRPC: 8edf627ee524575e2f8d19d56f068b448eea3879
+  Braintree: 94a20907b70aeffb29c40380eec583d783a347b6
   DoubleConversion: cf9b38bf0b2d048436d9a82ad2abe1404f11e7de
   FBLazyVector: e686045572151edef46010a6f819ade377dfeb4b
   FBReactNativeSpec: 23851cdc977a70552f7d6893db69649cd1d717f8
@@ -875,11 +909,12 @@ SPEC CHECKSUMS:
   RNFBStorage: c326632c37e247af7a0986ad3d9c12d682e90962
   RNGestureHandler: a479ebd5ed4221a810967000735517df0d2db211
   RNGoogleSignin: e64616a4080cf7d83f4b292fad82d174587444e2
+  RNPaypal: 248d7a7d9f7b09c5988e7834d112bbe3c69de0dd
   RNReanimated: 9c13c86454bfd54dab7505c1a054470bfecd2563
   RNScreens: bf59f17fbf001f1025243eeed5f19419d3c11ef2
   RNVectorIcons: 31cebfcf94e8cf8686eb5303ae0357da64d7a5a4
   Yoga: 575c581c63e0d35c9a83f4b46d01d63abc1100ac
 
-PODFILE CHECKSUM: 57ee8b3304533b36309ee5cf4867e39a5055480a
+PODFILE CHECKSUM: 1b5a12db538aaacf1f20a34f30fc2d387a7c95b8
 
 COCOAPODS: 1.10.1

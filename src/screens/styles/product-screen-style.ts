@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     lineHeight: 20,
   },
-  
+
   image: {
     margin: 10,
     height: 250,

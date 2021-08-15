@@ -12,14 +12,20 @@ const Root = createStackNavigator();
 const Router = () => {
   return (
     <NavigationContainer>
-    <Root.Navigator initialRouteName={'Login'} screenOptions={{headerShown: false}}>
-      <Root.Screen component={Login} name="Login" />
-      <Root.Screen component={BottomTabNav} name="HomeTabs" />
-      <Root.Screen component={SignUp} name="SignUp" options={{
-                headerShown: true,
-              }}/>
-    </Root.Navigator>
-  </NavigationContainer>
+      <Root.Navigator
+        initialRouteName={'Login'}
+        screenOptions={{headerShown: false}}>
+        <Root.Screen component={Login} name="Login" />
+        <Root.Screen component={BottomTabNav} name="HomeTabs" />
+        <Root.Screen
+          component={SignUp}
+          name="SignUp"
+          options={{
+            headerShown: true,
+          }}
+        />
+      </Root.Navigator>
+    </NavigationContainer>
   );
 };
 

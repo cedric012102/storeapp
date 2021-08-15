@@ -185,6 +185,10 @@ android {
 }
 
 dependencies {
+    implementation "com.braintreepayments.api:braintree:3.+"
+
+    implementation "com.braintreepayments.api:data-collector:3.+"
+    
     implementation fileTree(dir: "libs", include: ["*.jar"])
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
